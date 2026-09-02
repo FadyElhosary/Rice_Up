@@ -1,6 +1,6 @@
 # Rice Up
 
-A Flutter mobile application that brings together cloud services, data access, visualization, and machine-learning capabilities.
+A Flutter mobile application that combines a mobile interface with cloud services, data access, visualization, and machine-learning capabilities.
 
 ![Flutter](https://img.shields.io/badge/Flutter-Mobile%20App-02569B?logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-Programming%20Language-0175C2?logo=dart&logoColor=white)
@@ -8,53 +8,57 @@ A Flutter mobile application that brings together cloud services, data access, v
 ![GraphQL](https://img.shields.io/badge/API-GraphQL-E10098?logo=graphql&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/ML-PyTorch%20Mobile-EE4C2C?logo=pytorch&logoColor=white)
 
-## About the project
+## What is Rice Up?
 
-Rice Up was built as a Flutter application with a backend-connected architecture. It combines Flutter and Dart with AWS Amplify, Cognito, GraphQL, and DataStore, and also includes charting, connectivity handling, image selection, and PyTorch Mobile support.
+Rice Up is a Flutter application built to bring several parts of a modern mobile solution together. The application uses Flutter and Dart for the client side, while AWS Amplify, Cognito, GraphQL, and DataStore provide the cloud and data layer.
 
-The interesting part of the project is how these pieces work together in one application: the UI communicates with application state, the application connects to backend services, and data can be presented visually or used by an ML component.
+The project also includes charting, network connectivity handling, image selection, and PyTorch Mobile support.
+
+Rather than focusing on one technology, the project is useful as an example of how an application can connect the user interface, application state, backend services, data, and machine learning.
 
 ## Architecture
 
 ![Rice Up Architecture](docs/architecture.svg)
 
-The diagram provides a quick view of the main technologies before diving into the source code.
+The diagram shows the main building blocks and how they relate to each other.
 
-## Main technologies
+## Technology stack
 
 | Area | Technology | Purpose |
 |---|---|---|
-| Mobile application | Flutter / Dart | Cross-platform application development |
-| State management | Provider | Keep application state organized |
-| Authentication | AWS Amplify / Cognito | User authentication and identity |
-| API | GraphQL | Backend communication |
-| Data | Amplify DataStore | Data access and synchronization |
-| Machine learning | PyTorch Mobile | On-device model inference |
-| Visualization | Syncfusion Charts | Display application data |
-| Connectivity | connectivity_plus | React to network changes |
+| Mobile | Flutter / Dart | Build the application |
+| State management | Provider | Manage shared application state |
+| Authentication | AWS Amplify / Cognito | Handle user identity and authentication |
+| API | GraphQL | Communicate with backend services |
+| Data | Amplify DataStore | Store and synchronize application data |
+| Machine learning | PyTorch Mobile | Support on-device inference |
+| Visualization | Syncfusion Charts | Display data in charts |
+| Connectivity | connectivity_plus | Detect network changes |
 | Images | image_picker | Select images from the device |
 
-These technologies are reflected in the project's dependency configuration. fileciteturn9file0
+The technologies above are based on the dependencies defined by the project. fileciteturn9file0
 
 ## What this project demonstrates
 
-- Building a mobile application with Flutter
-- Managing shared state with Provider
-- Connecting an application to AWS services
+This project gave me practical experience with several areas that normally have to work together in a real application:
+
+- Building a cross-platform application with Flutter
+- Managing application state with Provider
+- Integrating AWS services into a mobile application
 - Working with GraphQL APIs
 - Handling application data and synchronization
-- Displaying information through charts
-- Detecting connectivity changes
-- Integrating mobile machine-learning capabilities
+- Displaying data through interactive charts
+- Handling network connectivity
+- Integrating machine-learning functionality into a mobile application
 
-## Running the project
+## Getting started
 
 ### Requirements
 
 - Flutter SDK
-- Dart SDK compatible with the project
+- A compatible Dart SDK
 - Android Studio or Xcode
-- Android/iOS emulator or physical device
+- An Android/iOS emulator or physical device
 - The required AWS Amplify configuration for cloud features
 
 ### Installation
@@ -66,16 +70,21 @@ flutter pub get
 flutter run
 ```
 
-Some cloud features depend on the original Amplify/Cognito environment. Credentials and other environment-specific values should be configured locally and not committed to Git.
+Some cloud functionality depends on the original AWS Amplify/Cognito environment. If you want to reproduce the complete application, you may need to configure those services for your own environment.
 
-## Project notes
+Do not commit credentials, API keys, or other secrets to the repository.
 
-This is a practical application project rather than a step-by-step Flutter tutorial. Some integrations reflect the environment in which the application was originally developed, so reproducing the complete application may require additional configuration.
+## Project structure
+
+The `docs` directory contains the architecture diagram used in this README. It is there to make the project easier to understand before going through the implementation.
+
+## Notes
+
+This repository represents a practical application project and not a production-ready template. Some integrations were created for the original development environment, so additional configuration may be required when running the project today.
 
 ## Author
 
 **Fady Elhosary**  
 Data Engineer
 
-- LinkedIn: [Fady Elhosary](https://www.linkedin.com/in/fady-elhosary-68064a338/)
-- Email: fadymohamed1@gmail.com
+[LinkedIn](https://www.linkedin.com/in/fady-elhosary-68064a338/) · fadymohamed1@gmail.com
