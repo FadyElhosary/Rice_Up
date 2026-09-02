@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+<rect width="1200" height="520" fill="white"/>
+<text x="600" y="55" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold">Rice Up — Application Architecture</text>
+<g font-family="Arial" font-size="18" text-anchor="middle">
+<rect x="70" y="150" width="220" height="100" rx="16" fill="#f3f4f6" stroke="#374151" stroke-width="2"/><text x="180" y="195">Flutter UI</text><text x="180" y="222">Mobile Application</text>
+<rect x="350" y="150" width="220" height="100" rx="16" fill="#f3f4f6" stroke="#374151" stroke-width="2"/><text x="460" y="195">Provider</text><text x="460" y="222">State Management</text>
+<rect x="630" y="150" width="220" height="100" rx="16" fill="#f3f4f6" stroke="#374151" stroke-width="2"/><text x="740" y="195">AWS Amplify</text><text x="740" y="222">Auth / API / Data</text>
+<rect x="910" y="150" width="220" height="100" rx="16" fill="#f3f4f6" stroke="#374151" stroke-width="2"/><text x="1020" y="195">GraphQL / Backend</text><text x="1020" y="222">Application Services</text>
+<rect x="350" y="350" width="220" height="90" rx="16" fill="#f3f4f6" stroke="#374151" stroke-width="2"/><text x="460" y="390">PyTorch Mobile</text><text x="460" y="417">On-device ML</text>
+<rect x="630" y="350" width="220" height="90" rx="16" fill="#f3f4f6" stroke="#374151" stroke-width="2"/><text x="740" y="390">Charts</text><text x="740" y="417">Data Visualization</text>
+</g>
+<g stroke="#374151" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M290 200H350"/><path d="M570 200H630"/><path d="M850 200H910"/><path d="M460 250V350"/><path d="M740 250V350"/></g>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#374151"/></marker></defs>
+<text x="600" y="490" text-anchor="middle" font-family="Arial" font-size="16">Technology map derived from the project's Flutter dependencies.</text>
+</svg>
